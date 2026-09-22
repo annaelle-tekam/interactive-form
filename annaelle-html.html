@@ -1,0 +1,63 @@
+<html lang="fr">
+	<head>
+		
+		<title> mon formulaire </title>
+	</head>
+	<body>
+	<form method="post" action="">
+	    <h1>Rejoignez notre communauté ! </h1>
+		<fieldset>
+			<legend> Informations de base </legend>
+			<table border="0">
+				<tr><td> Nom : </td>
+					<td><input type="text" name="nom" id="nom"/></td>
+				</tr>
+				<tr><td> Prenom </td>
+					<td><input type="texte" name "prenom" id="prenom" /></td>
+				</tr>
+				<tr><td>Date de naissance:</td>
+				    <td><input type="date" name="date" id="date" /></td>
+				</tr>
+				<tr><td> Mail :</td>
+					<td><input type="email" name="email" id="email" placeholder="nomd'utilisateur@domaine"/></td>
+				</tr>
+				<tr><td> Adresse : </td>
+					<td><input type="text" name="adresse" id="adresse"/></td>
+				</tr>
+				<tr><td> Code : </td>
+				    <td><input type="password" name ="code" id="code" placeholder="0000"/></td>
+				</tr>
+				<tr><td> Genre : </td>
+					<td><input type="radio" name="sexe" id="homme" value="H" /> Homme <br>
+					    <input type="radio" name="sexe"id="femme" value="F"> Femme</td>
+				</tr>
+				<tr><td> Continent: </td>
+					<td><select name="continent" id="son-continent">
+							<option value="Afr"> Afrique </option>
+							<option value="Ams"> Amérique du sud</option>
+							<option value="Amn"> Amérique du nord </option>
+							<option value="Ant"> Antartique </option>
+							<option value="Asie"> Asie</option>
+							<option value="Eur"> Europe </option>
+							<option value="Océ"> Océanie </option>
+						</select> </td>
+				</tr>
+			
+			</table>
+		</fieldset>
+		<fieldset><legend> Vos tartes préférées </legend>
+		<table border="0">
+			<tr><td><input type="checkbox" name="tartes" id="prunes" value="pom"/> Tartes aux prunes</td></tr>
+			<tr><td><input type="checkbox" name="tartes" id="fraise" value="fra" /> Tartes aux fraises</td></tr>
+			<tr><td><input type="checkbox" name="tartes" id="rustique" value="rus"/> Tartes rustiques</td></tr>
+		</table>
+		<textarea name="detail" rows="5" cols="40" placeholder="Decrivez vos gouts en detail"></textarea>
+		</fieldset>
+		<fieldset><legend>Envoyez votre photo</legend>
+		<input type="file" name="photo" placeholder="choisir un fichier"/><br>
+		<input type="reset" value="Effacer"/>
+		</fieldset>
+	<input type="submit" value="Envoyer"/>
+	</form>		
+	</body>
+<html>
